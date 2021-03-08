@@ -2,10 +2,10 @@
     //Union Types: OR
 
     type Direction = 'left' | 'right' | 'up' | 'down';
-    function move(direction: Direction){
+    function unionMove(direction: Direction){
         console.log(direction);
     }
-    move('down');
+    unionMove('down');
 
     type TileSize = 8 | 16 | 32;
     const tile: TileSize = 8;//8, 16, 32 중 하나만 가능
@@ -31,7 +31,7 @@
     //         },
     //     };
     // }
-    function login(id: string, password: string): LoginState{
+    function unionLogin(id: string, password: string): LoginState{
         return {
             response: {
                 body: 'logged in!',
@@ -42,7 +42,7 @@
     //printLoginState(state)
     //success -> 성공이모티콘과 response의 body 출력
     //fail -> 실패이모티콘과 실패이유 출력
-    function printLoginState(state: LoginState){
+    function unionPrintLoginState(state: LoginState){
         //response라는 key가 state 안에 있다면
         if('response' in state){
             console.log(`◎ ${state.response.body}`);
