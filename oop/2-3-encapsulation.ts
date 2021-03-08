@@ -51,4 +51,6 @@
     //비효율적, 말이 안되지만 makeMachine에 static이 붙어있지 않다면 maker2 를 new 로 생성한 다음 아래처럼 object에서 불러야함
     //maker2.makeMachine
 
+    
+
 }
