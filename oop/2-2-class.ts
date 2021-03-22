@@ -9,8 +9,8 @@
     //오브젝트마다 새로 만들어져야 하는 것 -> 멤버변수
     //클래스 레벨에서 함께 공유될 수 있는 것 -> static (멤버변수 뿐만 아니라 함수에도 적용할 수 있음)
     class CoffeeMaker{
-        //멤버변수
         static BEANS_GRAMM_PER_SHOT:number = 7; //변하지 않는 숫자 object마다 동일한 값 공유되는 값 -> object 만들 때마다 중복해서 생성되지 않도록 메모리 절약하도록 클래스 자체에만 넣어줌 static 키워드 붙임 -> class level 
+        //멤버변수
         coffeeBeans: number = 0; //instance (object) level
         
         //class가지고 object instance 만들 때 항상 처음 호출되는 함수 -> constructor
