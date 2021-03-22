@@ -56,8 +56,8 @@
         makeCoffee(shots: number): CoffeeCup{
             this.grindBeans(shots);
             this.preheat();
-            
-            return this.extract(shots);
+            const coffee = this.extract(shots);
+            return {...coffee, hasMilk: true};
         }
 
     }
